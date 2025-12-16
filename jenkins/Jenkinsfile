@@ -26,5 +26,11 @@ pipeline {
                 echo 'Job Complete!'
             }
         }
+        stage('pwd') {
+            steps {
+                echo "Workspace: ${pwd()}"
+                sh "ls -la"
+          }
+        }
     }
 }

@@ -30,6 +30,7 @@ pipeline {
             steps {
                 echo "Workspace: ${pwd()}"
                 sh "ls -la"
+                sh "ls -la ../"
           }
         }
     }
